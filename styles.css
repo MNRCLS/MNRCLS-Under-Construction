@@ -43,7 +43,7 @@ body, html {
 .logo {
   max-width: 150px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -57,5 +57,22 @@ p {
   color: #666;
 }
 
+.email-links {
+    display: flex; /* Use a flexbox container for better control */
+    flex-wrap: wrap; /* Allow items to wrap onto a new line */
+    justify-content: center; /* Center align all content */
+    gap: 10px; /* Add spacing between items */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-/* Bottom Content */
+.email-links a {
+    display: inline-block; /* Ensure each email behaves as a standalone block */
+    white-space: nowrap; /* Prevent email addresses from breaking in the middle */
+    text-decoration: none;
+    }
+
+.divider {
+    display: inline-block; /* Ensures the divider acts as a separate element */
+}

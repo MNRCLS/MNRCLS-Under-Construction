@@ -1,0 +1,51 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Times New Roman, Serif;
+}
+
+/* Landing page background */
+.landing-page {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background: url('UTM_background.png') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Foreground content */
+.content {
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+
+/* Bottom Content */

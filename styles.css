@@ -23,6 +23,8 @@ body, html {
   justify-content: center;
   align-items: center;
   text-align: center;
+    
+  overflow: hidden;
 }
 
 /* Foreground content */
@@ -31,12 +33,17 @@ body, html {
   padding: 35px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+  max-width: 95vw; /* Prevents the box from overflowing the viewport width */
+  max-height: 95vh; /* Prevents the box from overflowing the viewport height */
+  overflow: auto; /* Adds a scrollbar inside the content if it exceeds max-height */
+  box-sizing: border-box; /* Ensures padding is included in width/height calculations */
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 h1 {
